@@ -4,18 +4,15 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	  int b;
+	   int b;
       printf("정수 하나를 입력하시오 : ");
       scanf("%i", &b);
 
-      if (b > 0) {
-         printf("양수입니다.\n");
-      }
-      else if (b == 0) {
-         printf("0 입니다.\n");
+      if (b < 0) {
+         printf("절댓값은 %i 입니다.\n", -b);
       }
       else {
-         printf("음수입니다.\n" );
+         printf("절댓값은 %i 입니다.\n", b );
       }
 	return 0;
 }
